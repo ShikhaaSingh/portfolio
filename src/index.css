@@ -90,14 +90,25 @@ button {
 }
 
 .wordmark {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 9px;
   color: var(--text);
-  font-size: 19px;
-  font-weight: 800;
-  letter-spacing: -1.2px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
 }
 
-.wordmark span {
-  color: var(--accent);
+.wordmark-avatar {
+  display: block;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 42%;
 }
 
 .nav-links {

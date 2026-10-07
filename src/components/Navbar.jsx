@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { navigation } from "../data/portfolio.js";
+import { links, navigation } from "../data/portfolio.js";
 
 function Navbar({ theme, onToggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +13,15 @@ function Navbar({ theme, onToggleTheme }) {
     <header className="site-header">
       <nav className="nav-shell" aria-label="Main navigation">
         <a href="/" className="wordmark" onClick={closeMenu}>
-          SS<span>.</span>
+          <img
+            className="wordmark-avatar"
+            src={links.photo}
+            alt=""
+            aria-hidden="true"
+            width="36"
+            height="36"
+          />
+          <span>Shikha</span>
         </a>
         <div
           id="nav-links"
