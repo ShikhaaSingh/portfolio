@@ -18,7 +18,12 @@ function ExperienceSection() {
             <h3>Impact &amp; contributions</h3>
             <ul className="focus-list">
               {experience.highlights.map((item) => (
-                <li key={item}>{item}</li>
+                <li
+                  key={item}
+                  dangerouslySetInnerHTML={{
+                    __html: item.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>"),
+                  }}
+                />
               ))}
             </ul>
           </div>
