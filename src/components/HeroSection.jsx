@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { links } from "../data/portfolio.js";
 
 const developerTitles = [
-  "Web Developer",
-  "Java Developer",
   "Software Engineer",
-  "MERN Stack Developer",
+  "Java Backend Developer",
+  "Full Stack Developer",
+  "Problem Solver",
 ];
 
 function HeroSection() {
@@ -32,8 +32,8 @@ function HeroSection() {
           <span className="title-cursor" aria-hidden="true">|</span>
         </p>
         <p className="hero-description">
-          Software Engineer focused on Java backend development, REST APIs,
-          cloud systems, and production engineering.
+          Software Engineer specializing in Java, backend development, REST APIs,
+          and production-ready systems.
         </p>
         <div className="hero-actions">
           <a href="/about" className="button button-primary">
