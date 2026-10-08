@@ -194,7 +194,20 @@ export const projects = [
   {
     number: "01",
     name: "AI-Powered Student Result Management System",
-    technologies: ["Java", "Spring Boot", "MongoDB/MySQL", "JavaScript", "ChatGPT"],
+    description:
+      "A full-stack student result management system for managing student records, marks, grades, and performance analytics through REST APIs and a web interface.",
+    technologies: ["Java", "Spring Boot", "MongoDB", "JavaScript", "REST APIs", "ChatGPT"],
+    overview: {
+      whatItDoes:
+        "A full-stack student result management system for managing student records, marks, grades, and performance analytics through REST APIs and a web interface.",
+      techStack: ["Java", "Spring Boot", "MongoDB", "JavaScript", "REST APIs", "ChatGPT"],
+      keyFeatures: [
+        "Student and result management",
+        "RESTful CRUD APIs",
+        "Grade and performance tracking",
+        "Performance analytics",
+      ],
+    },
   },
   {
     number: "02",
@@ -206,6 +219,19 @@ export const projects = [
       "Machine Learning",
       "AWS",
     ],
+    description:
+      "A full-stack e-commerce application for browsing and purchasing products, with machine learning to predict prices from historical data and market trends.",
+    overview: {
+      whatItDoes:
+        "A full-stack e-commerce application that allows users to browse and purchase products while using machine learning to predict product prices based on historical data and market trends.",
+      techStack: ["Core Java", "SQL/MySQL", "JavaScript", "Machine Learning", "AWS"],
+      keyFeatures: [
+        "Product browsing and management",
+        "E-commerce functionality",
+        "ML-based price prediction",
+        "Database-backed product data",
+      ],
+    },
   },
   {
     number: "03",
@@ -222,6 +248,16 @@ export const projects = [
       "REST APIs",
       "AWS",
     ],
+    overview: {
+      whatItDoes:
+        "A full-stack e-commerce platform for buying vegetables and fruits, with machine-learning-based price prediction using historical data and market trends.",
+      techStack: ["Core Java", "JavaScript", "MySQL", "Machine Learning", "REST APIs", "AWS"],
+      keyFeatures: [
+        "Vegetable and fruit e-commerce",
+        "Product price prediction",
+        "Historical data and market trend analysis",
+      ],
+    },
   },
   {
     number: "04",
@@ -232,6 +268,16 @@ export const projects = [
     image: "/projects/url-shortener.png",
     technologies: ["HTML5", "CSS3", "JavaScript", "Fetch API", "Local Storage"],
     repositoryUrl: "https://github.com/ShikhaaSingh/url-shortener",
+    overview: {
+      whatItDoes:
+        "A responsive browser-based app for shortening and managing shareable links, with copy actions and recent-link history saved locally.",
+      techStack: ["HTML5", "CSS3", "JavaScript", "Fetch API", "Local Storage"],
+      keyFeatures: [
+        "Shorten and manage shareable links",
+        "Copy shortened links",
+        "Locally saved recent-link history",
+      ],
+    },
   },
   {
     number: "05",
@@ -242,6 +288,12 @@ export const projects = [
     image: null,
     technologies: [],
     repositoryUrl: "https://github.com/ShikhaaSingh/Smart-Students-Sojourn-",
+    overview: {
+      whatItDoes:
+        "A project focused on helping students find PG accommodation and making relocation easier.",
+      techStack: [],
+      keyFeatures: ["PG accommodation discovery", "Support for student relocation"],
+    },
   },
   {
     number: "06",
@@ -257,10 +309,73 @@ export const projects = [
       "JWT",
       "JPA",
       "H2",
-      "HTML/CSS/JavaScript",
+      "HTML",
+      "CSS",
+      "JavaScript",
       "Maven",
     ],
     repositoryUrl: "https://github.com/ShikhaaSingh/task-Manager",
+    overview: {
+      whatItDoes:
+        "A secure task management application built with Java and Spring Boot that allows users to create, manage, and track tasks through a backend REST API.",
+      techStack: [
+        "Java 17",
+        "Spring Boot",
+        "Spring Security",
+        "JWT",
+        "JPA",
+        "H2",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Maven",
+      ],
+      keyFeatures: [
+        "Task creation and management",
+        "REST APIs",
+        "JWT-based authentication",
+        "Secure API access",
+      ],
+    },
+  },
+  {
+    number: "07",
+    name: "AI-Powered Incident & Log Management Platform",
+    subtitle: "Planned · In Development",
+    previewLabel: "INCIDENTS & LOGS",
+    description:
+      "A backend platform in development for collecting application logs and managing production incidents. It will use AI to classify incidents, identify possible root causes, and suggest troubleshooting steps.",
+    technologies: [
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "Python",
+      "REST APIs",
+      "AI/LLM Integration",
+      "Log Processing",
+      "Docker",
+    ],
+    overview: {
+      whatItDoes:
+        "A backend platform for collecting application logs and managing production incidents. It will use AI to classify incidents, identify possible root causes, and suggest troubleshooting steps.",
+      techStack: [
+        "Java",
+        "Spring Boot",
+        "PostgreSQL",
+        "Python",
+        "REST APIs",
+        "AI/LLM Integration",
+        "Log Processing",
+        "Docker",
+      ],
+      keyFeatures: [
+        "Incident management",
+        "Log ingestion and processing",
+        "Error analysis",
+        "AI-assisted incident classification and troubleshooting",
+      ],
+      status: "Planned · In Development",
+    },
   },
 ];
 

@@ -1,6 +1,11 @@
+import { useRef, useState } from "react";
 import { links, projects } from "../data/portfolio.js";
+import ProjectOverviewModal from "./ProjectOverviewModal.jsx";
 
 function ProjectsSection() {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const overviewTriggerRef = useRef(null);
+
   return (
     <section className="content-section section-wrap">
       <div className="projects-grid">
@@ -13,9 +18,9 @@ function ProjectsSection() {
           previewLabel,
           technologies,
           repositoryUrl,
+          overview,
         }) => {
           const repository = repositoryUrl || links.projectRepositories[number];
-          const demo = links.projectDemos[number];
 
           return (
             <article className="project-card" key={number}>
@@ -54,36 +59,49 @@ function ProjectsSection() {
                     <li key={technology}>{technology}</li>
                   ))}
                 </ul>
-                {(repository || demo || number === "03") && (
-                  <div className="project-links">
-                    {repository && (
-                      <a href={repository} target="_blank" rel="noreferrer">
-                        GitHub <span aria-hidden="true">↗</span>
-                      </a>
-                    )}
-                    {demo && (
-                      <a href={demo} target="_blank" rel="noreferrer">
-                        Live demo <span aria-hidden="true">↗</span>
-                      </a>
-                    )}
-                    {!repository && number === "03" && (
-                      <button
-                        className="project-link-disabled"
-                        type="button"
-                        disabled
-                        aria-disabled="true"
-                        title="GitHub repository link will be added when available"
-                      >
-                        GitHub <span aria-hidden="true">↗</span>
-                      </button>
-                    )}
-                  </div>
-                )}
+                <div className="hero-actions project-links">
+                  {repository ? (
+                    <a
+                      className="button button-primary"
+                      href={repository}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  ) : (
+                    <button
+                      className="button button-primary"
+                      type="button"
+                      disabled
+                      title="GitHub repository link will be added when available"
+                    >
+                      GitHub
+                    </button>
+                  )}
+                  <button
+                    className="button button-secondary"
+                    type="button"
+                    onClick={(event) => {
+                      overviewTriggerRef.current = event.currentTarget;
+                      setSelectedProject({ name, number, overview });
+                    }}
+                  >
+                    Project Overview
+                  </button>
+                </div>
               </div>
             </article>
           );
         })}
       </div>
+      {selectedProject && (
+        <ProjectOverviewModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+          triggerRef={overviewTriggerRef}
+        />
+      )}
     </section>
   );
 }
