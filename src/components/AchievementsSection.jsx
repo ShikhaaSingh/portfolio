@@ -1,21 +1,24 @@
 import { achievement, links } from "../data/portfolio.js";
-import SectionLabel from "./SectionLabel.jsx";
 
 function AchievementsSection() {
   return (
-    <section className="content-section section-wrap achievement-section">
-      <SectionLabel number="05">PROBLEM SOLVING</SectionLabel>
-      <div className="achievement">
-        <strong>{achievement.value}</strong>
-        <span>{achievement.label}</span>
-        <p>Consistent focus on data structures, algorithms, and problem solving using Java.</p>
-        {links.leetcode && (
-          <a href={links.leetcode} target="_blank" rel="noreferrer">
-            LeetCode profile <span aria-hidden="true">↗</span>
-          </a>
-        )}
-      </div>
-    </section>
+    <article className="certification-card about-highlight-card about-problem-card">
+      <p className="eyebrow about-card-eyebrow">PROBLEM SOLVING</p>
+      <strong>{achievement.value}</strong>
+      <h3>LeetCode Problems Solved</h3>
+      <p className="about-card-supporting">
+        Consistent practice in Data Structures and Algorithms using Java.
+      </p>
+      <a
+        className="about-profile-link"
+        href={links.leetcode}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LeetCode Profile (opens in a new tab)"
+      >
+        LeetCode Profile <span aria-hidden="true">↗</span>
+      </a>
+    </article>
   );
 }
 

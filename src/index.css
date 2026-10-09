@@ -508,8 +508,7 @@ button {
   padding-top: 25px;
 }
 
-.experience-body h3,
-.education-heading .eyebrow {
+.experience-body h3 {
   margin: 0 0 15px;
   color: #d4d7da;
   font-size: 11px;
@@ -618,8 +617,7 @@ button {
   margin-top: 27px;
 }
 
-.section-heading-row h2,
-.about-grid h2 {
+.section-heading-row h2 {
   margin: 0;
   color: #eef0f1;
   font-size: clamp(30px, 4vw, 42px);
@@ -1036,115 +1034,95 @@ button {
   font-size: 8px;
 }
 
-.achievement-section {
-  padding-bottom: 85px;
+.about-section {
+  padding-bottom: 57px;
 }
 
-.achievement {
-  display: flex;
-  align-items: baseline;
-  gap: 21px;
+.about-eyebrow {
+  margin: 0 0 13px;
+  color: var(--quiet);
+}
+
+.about-copy p {
+  max-width: 800px;
+  margin: 0 0 14px;
+  color: var(--copy);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
   margin-top: 29px;
-  padding: 26px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
 }
 
-.achievement strong {
-  color: var(--accent-strong);
-  font-size: clamp(54px, 8vw, 83px);
-  font-weight: 550;
-  letter-spacing: -0.09em;
-  line-height: 1;
+.about-highlight-card {
+  min-height: 0;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 18px;
 }
 
-.achievement span {
-  color: #b9bec4;
-  font-size: 14px;
+.about-card-eyebrow {
+  margin: 0;
+  color: var(--quiet);
+  font-size: 9px;
 }
 
-.achievement p {
-  max-width: 330px;
-  margin: 0 0 0 auto;
-  color: #aeb3ba;
+.about-highlight-card h3 {
+  margin: 0;
+  color: var(--heading);
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.6;
+}
+
+.about-education-institution {
+  margin: 0;
+  color: var(--copy);
   font-size: 11px;
   line-height: 1.7;
 }
 
-.achievement a {
-  flex: 0 0 auto;
+.about-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: auto;
+  color: var(--quiet);
+  font-family: var(--mono);
+  font-size: 9px;
+}
+
+.about-problem-card strong {
+  margin-top: 2px;
+  color: var(--accent-strong);
+  font-size: 42px;
+  font-weight: 550;
+  letter-spacing: -0.08em;
+  line-height: 1;
+}
+
+.about-card-supporting {
+  margin: 0;
+  color: var(--copy);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.about-profile-link {
+  align-self: flex-start;
+  margin-top: auto;
   color: var(--accent-strong);
   font-size: 10px;
   font-weight: 600;
   transition: color 160ms ease;
 }
 
-.achievement a:hover {
-  color: #eef5f0;
-}
-
-.about-section {
-  padding-bottom: 57px;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 0.76fr;
-  gap: 64px;
-  margin-top: 28px;
-}
-
-.about-grid h2 {
-  font-size: clamp(35px, 5vw, 53px);
-}
-
-.about-grid h2 span {
-  color: #7f8790;
-}
-
-.about-copy p {
-  margin: 0 0 13px;
-  color: #aeb3ba;
-  font-size: 12px;
-  line-height: 1.9;
-}
-
-.education-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: start;
-  gap: 30px;
-  padding-block: 30px 73px;
-}
-
-.education-heading .eyebrow {
-  margin-bottom: 10px;
-  color: var(--quiet);
-}
-
-.education-heading h2 {
-  max-width: 390px;
-  margin: 0;
-  color: #e3e6e8;
-  font-size: 15px;
-  font-weight: 650;
-  line-height: 1.6;
-}
-
-.education-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 17px;
-  color: #aeb3ba;
-  font-size: 10px;
-  line-height: 1.8;
-}
-
-.education-details p {
-  width: 100%;
-  margin: 0;
-  color: #d2d6d9;
-  font-size: 11px;
+.about-profile-link:hover {
+  color: var(--heading);
 }
 
 .contact-section {
@@ -1451,10 +1429,6 @@ button {
 [data-theme="light"] .technology-list li,
 [data-theme="light"] .skill-description,
 [data-theme="light"] .skill-row li,
-[data-theme="light"] .achievement span,
-[data-theme="light"] .achievement p,
-[data-theme="light"] .about-copy p,
-[data-theme="light"] .education-details,
 [data-theme="light"] .footer-inner > span,
 [data-theme="light"] .back-to-top {
   color: var(--copy);
@@ -1463,8 +1437,7 @@ button {
 [data-theme="light"] .hero-greeting,
 [data-theme="light"] .hero-title,
 [data-theme="light"] .experience-role,
-[data-theme="light"] .project-subtitle,
-[data-theme="light"] .achievement a {
+[data-theme="light"] .project-subtitle {
   color: var(--accent-strong);
 }
 
@@ -1472,19 +1445,16 @@ button {
 [data-theme="light"] .page-heading h1,
 [data-theme="light"] .experience-heading h2,
 [data-theme="light"] .experience-body h3,
-[data-theme="light"] .education-heading .eyebrow,
 [data-theme="light"] .application-item strong,
 [data-theme="light"] .focus-grid h3,
 [data-theme="light"] .section-heading-row h2,
-[data-theme="light"] .about-grid h2,
 [data-theme="light"] .contact-intro h2,
 [data-theme="light"] .contact-info h3,
 [data-theme="light"] .project-content h3,
 [data-theme="light"] .skill-row h3,
 [data-theme="light"] .certifications-heading h2,
 [data-theme="light"] .certification-card h3,
-[data-theme="light"] .education-heading h2,
-[data-theme="light"] .education-details p {
+[data-theme="light"] .about-highlight-card h3 {
   color: var(--heading);
 }
 
@@ -1810,40 +1780,10 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .achievement {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
-    padding-block: 23px;
-  }
-
-  .achievement strong {
-    font-size: 65px;
-  }
-
-  .achievement span {
-    font-size: 12px;
-  }
-
-  .achievement p {
-    margin: 3px 0;
-  }
-
-  .about-grid {
+  .about-highlights {
     grid-template-columns: 1fr;
-    gap: 17px;
-    margin-top: 22px;
-  }
-
-  .about-grid h2 {
-    font-size: clamp(34px, 9vw, 46px);
-  }
-
-  .education-section {
-    grid-template-columns: 1fr;
-    gap: 14px;
-    padding-top: 0;
-    padding-bottom: 58px;
+    gap: 11px;
+    margin-top: 23px;
   }
 
   .contact-intro {

@@ -1,45 +1,42 @@
 import { education } from "../data/portfolio.js";
+import AchievementsSection from "./AchievementsSection.jsx";
 
 function AboutSection() {
   return (
-    <>
-      <section className="content-section section-wrap about-section">
-        <div className="about-grid">
-          <div className="about-copy">
-            <p>
-              I’m a Software Engineer focused on backend development, Java,
-              Spring Boot, REST APIs, and cloud-based applications. I have
-              experience building production-ready systems, developer tools,
-              and scalable applications, with a strong focus on problem
-              solving, debugging, and writing clean, reliable code.
-            </p>
-            <p>
-              My technical experience includes Java, Spring Boot, SQL, GCP,
-              AWS, databases, CI/CD, and modern development tools. I’ve built
-              backend applications, REST APIs, full-stack platforms, and
-              data-driven solutions, and I enjoy turning complex technical
-              problems into practical and efficient solutions.
-            </p>
-            <p>
-              I also have a strong foundation in Data Structures and
-              Algorithms, with <strong>1000+ LeetCode problems solved</strong>.
-            </p>
+    <section className="content-section section-wrap about-section">
+      <p className="eyebrow about-eyebrow">A LITTLE ABOUT ME</p>
+      <div className="about-copy">
+        <p>
+          I'm a Software Engineer who enjoys building reliable backend systems
+          and solving complex engineering problems. My experience at Google
+          gave me the opportunity to work on Java-based debugging tools, REST
+          APIs, and cloud-backed systems used in production engineering
+          workflows.
+        </p>
+        <p>
+          I enjoy understanding how systems work behind the scenes,
+          investigating difficult issues, and turning manual processes into
+          practical tools. I value clean code, thoughtful problem solving, and
+          building solutions that make developers' work easier.
+        </p>
+        <p>
+          Beyond development, I continuously strengthen my fundamentals through
+          Data Structures and Algorithms and hands-on projects.
+        </p>
+      </div>
+      <div className="about-highlights">
+        <article className="certification-card about-highlight-card">
+          <p className="eyebrow about-card-eyebrow">EDUCATION</p>
+          <h3>{education.degree}</h3>
+          <p className="about-education-institution">{education.institution}</p>
+          <div className="about-card-meta">
+            <span>{education.dates}</span>
+            <span>CGPA: {education.cgpa}</span>
           </div>
-        </div>
-      </section>
-
-      <section className="content-section section-wrap education-section" aria-labelledby="education-heading">
-        <div className="education-heading">
-          <p className="eyebrow">EDUCATION</p>
-          <h2 id="education-heading">{education.institution}</h2>
-        </div>
-        <div className="education-details">
-          <p>{education.degree}</p>
-          <span>{education.dates}</span>
-          <span>CGPA: {education.cgpa}</span>
-        </div>
-      </section>
-    </>
+        </article>
+        <AchievementsSection />
+      </div>
+    </section>
   );
 }
 

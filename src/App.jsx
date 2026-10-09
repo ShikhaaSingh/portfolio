@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import AboutSection from "./components/AboutSection.jsx";
-import AchievementsSection from "./components/AchievementsSection.jsx";
 import ContactSection from "./components/ContactSection.jsx";
 import HeroSection from "./components/HeroSection.jsx";
 import Navbar from "./components/Navbar.jsx";
@@ -14,7 +13,7 @@ const pageTitles = {
   "/work": "Experience",
   "/projects": "Projects",
   "/skills": "Technical Skills",
-  "/about": "About",
+  "/about": "About Me",
   "/contact": "Contact",
 };
 
@@ -41,12 +40,7 @@ function App() {
       page = <SkillsSection />;
       break;
     case "/about":
-      page = (
-        <>
-          <AboutSection />
-          <AchievementsSection />
-        </>
-      );
+      page = <AboutSection />;
       break;
     case "/contact":
       page = <ContactSection />;
