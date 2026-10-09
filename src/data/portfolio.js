@@ -47,104 +47,59 @@ export const engineeringFocus = [
 export const skillGroups = [
   {
     label: "Languages",
-    items: ["Java", "Python", "C++", "SQL", "JavaScript", "HTML5", "CSS3"],
+    items: ["Java", "Python", "SQL", "JavaScript"],
   },
   {
-    label: "Frontend & Web",
-    items: ["React", "Bootstrap", "Node.js", "Express"],
-  },
-  {
-    label: "Data Engineering",
-    items: [
-      "Event-Driven Data Pipelines",
-      "ETL / Log Ingestion at Scale",
-      "Batch & Real-Time Processing",
-      "REST API Design",
-      "Machine Learning",
-      "Price Prediction",
-    ],
-  },
-  {
-    label: "Database / RDBMS",
-    items: [
-      "MySQL",
-      "MongoDB",
-      "H2",
-      "Joins",
-      "Indexes",
-      "Constraints",
-      "Query Writing & Tuning",
-      "Stored Procedures / Functions (Basic)",
-    ],
-  },
-  { label: "Cloud", items: ["Google Cloud Platform (GCP)", "AWS"] },
-  {
-    label: "UNIX / Linux",
-    items: [
-      "Directory Navigation",
-      "Log Search & Analysis",
-      "Process Checks",
-      "Basic Shell Operations",
-    ],
-  },
-  {
-    label: "Backend",
+    label: "Backend Development",
     items: [
       "Spring Boot",
-      "Spring Security",
+      "REST APIs",
       "Hibernate",
       "JPA",
-      "JWT",
-      "Service-Oriented Systems",
+      "Guice DI",
+      "Boq Apps Framework",
     ],
   },
   {
-    label: "Web APIs & Storage",
-    items: ["Fetch API", "Local Storage"],
+    label: "Frontend Development",
+    items: ["HTML5", "CSS3", "JavaScript", "React"],
   },
   {
-    label: "Build, Version Control & Testing",
+    label: "Databases",
+    items: ["MySQL", "MongoDB", "PostgreSQL", "GoogleSQL"],
+  },
+  {
+    label: "Cloud & Infrastructure",
+    items: ["GCP", "AWS"],
+  },
+  {
+    label: "Developer Tools & CI/CD",
     items: [
       "Git",
-      "GitHub",
       "Maven",
       "Gradle",
       "Jenkins",
-      "CI/CD Pipelines",
       "JUnit",
       "Mockito",
       "Postman",
+      "Unix/Linux",
     ],
   },
   {
-    label: "Monitoring & Analytics",
-    items: ["Splunk", "Dynatrace", "PBI"],
-  },
-  {
-    label: "Computer Science Foundations",
+    label: "Software Engineering",
     items: [
-      "Data Structures & Algorithms",
-      "Object-Oriented Programming",
-      "Operating Systems",
-      "Computer Networks",
-    ],
-  },
-  {
-    label: "Core Competencies",
-    items: [
-      "SDLC",
+      "DSA",
+      "OOP",
       "SOLID",
       "System Design",
+      "Debugging",
       "Root Cause Analysis",
       "Agile/Scrum",
-      "Debugging",
     ],
   },
   {
-    label: "Gen AI Tools (hands-on)",
+    label: "AI Development Tools",
     items: ["GitHub Copilot", "ChatGPT", "Google Gemini", "Claude"],
-    description:
-      "Used for code and query generation, debugging, and pipeline development.",
   },
 ];
 
