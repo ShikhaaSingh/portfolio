@@ -1,28 +1,63 @@
-# Shikha Singh | Portfolio
+# Shikha Singh | Software Engineer Portfolio
 
-A modern personal portfolio website built with React and Vite, showcasing software engineering experience, skills, projects, and contact details.
+A modern personal portfolio for a software engineer focused on Java backend development, REST APIs, and production-ready software systems.
 
-## Overview
+Technology stack: React + Vite + Tailwind CSS + JavaScript
 
-This portfolio highlights:
+- GitHub: [ShikhaaSingh/portfolio](https://github.com/ShikhaaSingh/portfolio)
+- Live Demo: [Add live deployment URL](#)
 
-- A clean hero section and personal introduction
-- Experience timeline and career highlights
-- Technical skills and engineering focus
-- Featured projects with modal details
-- Contact section for outreach and collaboration
-- Light/dark theme toggle
+## Table of Contents
 
-## Tech Stack
+- [About the Portfolio](#about-the-portfolio)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Customization](#customization)
+- [Deployment](#deployment)
+- [Contact](#contact)
 
-This portfolio is built using:
+## About the Portfolio
 
-- React.js
-- Vite
-- Tailwind CSS
+This portfolio is designed to present Shikha Singh's professional background as a Software Engineer specializing in Java backend development, REST APIs, engineering problem-solving, and software delivery. It provides a focused overview of experience, technical capabilities, project work, and ways to connect for opportunities and collaborations.
+
+Visitors can explore:
+
+- professional introduction and career focus
+- work experience and engineering contributions
+- featured projects and technical case studies
+- skills and tools across backend, frontend, and software engineering
+- contact details and message form for professional inquiries
+
+## Features
+
+- Professional introduction and career overview
+- Experience and engineering contributions
+- Featured projects with project overview modals
+- Technical skills and specialization areas
+- Contact information and contact form
+- Light and dark themes
+- Responsive design for desktop, tablet, and mobile
+
+## Technology Stack
+
+### Frontend
+
+- React
+- React DOM
 - JavaScript
 
-React.js is used for the UI and component-based structure, while Vite handles the development and production build setup.
+### Styling
+
+- Tailwind CSS
+
+### Build & Tooling
+
+- Vite
+- @vitejs/plugin-react
+- PostCSS
+- Autoprefixer
 
 ## Project Structure
 
@@ -33,6 +68,7 @@ React.js is used for the UI and component-based structure, while Vite handles th
 │   └── projects/
 ├── src/
 │   ├── components/
+│   ├── data/
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
@@ -41,43 +77,51 @@ React.js is used for the UI and component-based structure, while Vite handles th
 ├── vite.config.js
 ├── postcss.config.js
 ├── tailwind.config.js
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js (v18 or later recommended)
+- Node.js v18 or later
 - npm
 
-### Install dependencies
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/ShikhaaSingh/portfolio.git
+cd portfolio
+```
+
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### Run locally
+### 3. Run locally
 
 ```bash
 npm run dev
 ```
 
-The app will start in development mode and usually be available at:
+The portfolio will typically be available at:
 
 ```bash
 http://localhost:5173
 ```
 
-### Build for production
+### 4. Build for production
 
 ```bash
 npm run build
 ```
 
-The production build will be generated in the `dist` folder.
+The production build is generated in the `dist` directory.
 
-### Preview production build
+### 5. Preview production build
 
 ```bash
 npm run preview
@@ -85,26 +129,30 @@ npm run preview
 
 ## Customization
 
-You can personalize the portfolio by updating:
+The portfolio content and styling can be customized in the following files:
 
-- `src/App.jsx` for main page structure and sections
-- `src/components/` for individual sections like About, Projects, Experience, and Contact
-- `src/index.css` for styling and theme variations
-- `public/Profile.jpg` and project media assets for images
+- `src/App.jsx` — page structure and routing logic
+- `src/components/` — page sections such as Hero, Experience, Projects, Skills, About, and Contact
+- `src/data/portfolio.js` — portfolio content, skills, project information, and contact links
+- `src/index.css` — global styles and theme formatting
+- `public/Profile.jpg` — profile photo
+- `public/projects/` — project asset images and media
 
 ## Deployment
 
-This project is ready to be deployed to static hosting platforms such as:
+This portfolio is compatible with static hosting platforms such as Vercel.
 
-- Vercel
-- Netlify
-- GitHub Pages
-- Firebase Hosting
+For Vercel deployment:
 
-## License
+1. Import the repository into Vercel.
+2. Set the project root to the repository root.
+3. Use the following build settings:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+4. Deploy the project.
 
-This project is for personal portfolio use.
+No verified live deployment URL is currently included in the repository.
 
 ## Contact
 
-For project inquiries or collaboration opportunities, use the contact details listed in the portfolio site.
+For professional inquiries, collaboration opportunities, or project discussions, please use the contact form in the portfolio or the email address listed on the website.
