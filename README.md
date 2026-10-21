@@ -39,6 +39,7 @@ Visitors can explore:
 - Contact information and contact form
 - Light and dark themes
 - Responsive design for desktop, tablet, and mobile
+- Fixed quick-navigation dock for all pages, with one-click return to the top
 
 ## Technology Stack
 

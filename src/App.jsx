@@ -5,6 +5,7 @@ import HeroSection from "./components/HeroSection.jsx";
 import Navbar from "./components/Navbar.jsx";
 import ProjectsSection from "./components/ProjectsSection.jsx";
 import ExperienceSection from "./components/ExperienceSection.jsx";
+import SideNavigation from "./components/SideNavigation.jsx";
 import SkillsSection from "./components/SkillsSection.jsx";
 import SiteFooter from "./components/SiteFooter.jsx";
 
@@ -57,6 +58,7 @@ function App() {
         theme={theme}
         onToggleTheme={() => setTheme((currentTheme) => currentTheme === "dark" ? "light" : "dark")}
       />
+      <SideNavigation />
 
       <main className={`page-content page-${path === "/" ? "home" : path.slice(1)}`}>
         {path !== "/" && (

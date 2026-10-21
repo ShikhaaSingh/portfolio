@@ -82,6 +82,44 @@ button {
   backdrop-filter: blur(18px);
 }
 
+.side-navigation {
+  position: fixed;
+  z-index: 30;
+  top: 50%;
+  right: clamp(12px, 3vw, 34px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px 7px;
+  transform: translateY(-50%);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(14px);
+}
+
+.side-navigation-link {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--muted);
+  transition: color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.side-navigation-link:hover {
+  color: var(--text);
+  background: var(--surface-raised);
+  transform: scale(1.06);
+}
+
+.side-navigation-link[aria-current="page"] {
+  color: var(--page);
+  background: var(--accent);
+}
+
 .nav-shell {
   display: flex;
   height: 72px;
