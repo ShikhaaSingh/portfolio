@@ -77,7 +77,6 @@ function ProjectOverviewModal({ project, onClose, triggerRef }) {
       >
         <div className="project-modal-header">
           <div>
-            <p className="project-category">PROJECT {project.number}</p>
             <h2 id="project-modal-title">{project.name}</h2>
             {overview.status && (
               <p className="project-modal-status">{overview.status}</p>

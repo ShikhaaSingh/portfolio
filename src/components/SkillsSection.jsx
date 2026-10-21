@@ -2,18 +2,26 @@ import { certifications, skillGroups } from "../data/portfolio.js";
 
 function SkillsSection() {
   return (
-    <section className="content-section section-wrap">
-      <div className="skills-list">
-        {skillGroups.map(({ label, items, description }) => (
-          <div className="skill-row" key={label}>
-            <div>
-              <h3>{label}</h3>
-              {description && <p className="skill-description">{description}</p>}
+    <section className="content-section section-wrap skills-page">
+      <header className="skills-intro">
+        <p className="skills-eyebrow">Technical Expertise</p>
+        <h1>
+          Skills &amp; <span>Technologies</span>
+        </h1>
+        <p className="skills-intro-copy">
+          Technologies and tools across backend, frontend, cloud, data, and software engineering.
+        </p>
+      </header>
+      <div className="skills-grid">
+        {skillGroups.map(({ label, items }) => (
+          <article className="skill-card" key={label}>
+            <div className="skill-card-heading">
+              <h2>{label}</h2>
             </div>
             <ul aria-label={label}>
               {items.map((item) => <li key={item}>{item}</li>)}
             </ul>
-          </div>
+          </article>
         ))}
       </div>
       <section className="certifications-section" aria-labelledby="certifications-heading">

@@ -61,7 +61,7 @@ function App() {
       <SideNavigation />
 
       <main className={`page-content page-${path === "/" ? "home" : path.slice(1)}`}>
-        {path !== "/" && (
+        {path !== "/" && path !== "/skills" && (
           <div className="page-heading section-wrap">
             {path !== "/skills" &&
               path !== "/projects" &&

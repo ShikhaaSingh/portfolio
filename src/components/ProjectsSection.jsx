@@ -37,7 +37,6 @@ function ProjectsSection() {
                   className="project-preview"
                   aria-label={`${name} preview image can be added here`}
                 >
-                  <span className="preview-number">{number}</span>
                   <span className="preview-word">
                     {previewLabel ||
                       (number === "01"
@@ -50,7 +49,6 @@ function ProjectsSection() {
                 </div>
               )}
               <div className="project-content">
-                <p className="project-category">PROJECT {number}</p>
                 <h3>{name}</h3>
                 {subtitle && <p className="project-subtitle">{subtitle}</p>}
                 {description && <p className="project-description">{description}</p>}
